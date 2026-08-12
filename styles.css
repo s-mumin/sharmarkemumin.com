@@ -1,3 +1,59 @@
-body{
-    background-color: grey;
+body {
+    overflow-x: hidden;
+    background-color: rgb(229, 238, 238);
+    margin: auto;
+    /* font-family: "Yeseva One", serif; */
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: "Funnel Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Hero */
+#hero{
+    margin: 400px 0;
+    text-align: center;
+    justify-content: left;
+}
+
+/* footer */
+#footer {
+    background-color: rgb(107, 116, 236);
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+#footer>div {margin: 50px;}
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-top-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-top-links a,
+.footer-bottom-links a {
+    color: #ffffff;
+    font-size: .75em;
+}
+.socials a {
+    color: #dedede;
+    border: .5px solid;
+    border-radius: 100%;
+    border-color: #ffffff;
+    background-color: transparent;
+    padding: 5px;
+}
+.socials a:hover {
+    background-color: black;
+    opacity: .5;
 }
