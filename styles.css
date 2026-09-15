@@ -2,58 +2,463 @@ body {
     overflow-x: hidden;
     background-color: rgb(229, 238, 238);
     margin: auto;
-    /* font-family: "Yeseva One", serif; */
     max-width: 100%;
-    overflow-x: hidden;
-    font-family: "Funnel Display", serif;
-    font-optical-sizing: auto;
+    font-family: "Fira Sans", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
-/* Hero */
-#hero{
-    margin: 400px 0;
-    text-align: center;
-    justify-content: left;
+hr {
+    width: 98%;
+    color: white;
 }
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 12px 32px;
+    justify-content: left;
+    text-align: left;
+    align-items: left;
+}
+
+/* navbar */
+#navbar {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(107, 116, 236);
+}
+
+.navbar-brand a {
+    color: rgb(107, 116, 236);
+}
+
+.navbar-links,
+.navbar-brand {
+    color: rgb(107, 116, 236);
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 20px;
+}
+
+.navbar-links a {
+    color: rgb(107, 116, 236);
+    margin: 0 20px;
+}
+
+.navbar-links-mobile {
+    visibility: hidden;
+}
+
+.navbar-links-mobile a {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    color: white;
+}
+
+#navbar-menu-button {
+    visibility: hidden;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#navbar-menu-button:hover {
+    color: rgb(255, 255, 255);
+    border-color: white;
+}
+
+#main-img {
+    position: absolute;
+    z-index: -1;
+}
+
+#main-section {
+    opacity: 0.9;
+    margin: auto;
+    height: 85vh;
+    background-image: linear-gradient(rgba(228, 219, 219, 0.527), rgba(0, 0, 0, 0.5)), url('../images/Main-Hero-3.png');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+#main-section-text {
+    text-align: center;
+    color: white;
+    padding: 0 40%;
+    margin: 21% 0 0;
+    font-size: 2rem;
+}
+
+#main-section-text i {
+    font-size: 4em;
+}
+
+#main-btn {
+    box-shadow: inset 0px -3px 7px 0px #b4b7b8;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 13px 37px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+#main-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+#main-btn:active {
+    position: relative;
+    top: 1px;
+}
+
+#main-section-text a {
+    color: #fff;
+    font-size: .35em;
+}
+
+/* About */
+#about-section {
+    margin: 75px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Vertically */
+}
+
+#about-title {
+    width: 50%;
+}
+
+#about-title>h1 {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 400;
+    color: rgb(107, 116, 236);
+    text-align: end;
+}
+
+.about {
+    margin: 20px 0;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.about>div {
+    margin: 20px;
+    justify-content: center;
+    /* Horizontally */
+    align-items: center;
+    /* Vertically */
+}
+
+.about-img>img {
+    width: 480px;
+    height: 520px;
+    border-radius: 8px;
+}
+
+.about-text {
+        font-weight: 400;
+    font-size: 1.5em;
+}
+
+.about-text>p {
+    font-weight: 300;
+}
+
+.about-text>h4 {
+    color: rgb(107, 116, 236);
+}
+
+
+
+/* cards */
+#cards-section {
+    background-color: #ececec;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    margin: 100px 40px 0;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border: solid .05px;
+    border-radius: 8px;
+    border-color: rgb(194, 194, 194);
+}
+
+.cards>div {
+    margin: 6px;
+}
+
+.card-text {
+    padding: 5px;
+    text-align: center;
+}
+
+.card-text>h2 {
+    font-weight: 300;
+    color: rgb(107, 116, 236);
+}
+
+.card-text>p {
+    text-align: justify;
+}
+
+.card-text>h4 {
+    text-align: end;
+    color: rgb(107, 116, 236);
+}
+
+.card-img {
+    justify-content: center;
+    width: 500px;
+}
+
+
+.card-img>img {
+    width: 480px;
+    height: 400px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer */
 #footer {
     background-color: rgb(107, 116, 236);
     color: white;
     padding: 5px;
-    text-align: center;
 }
-#footer>div {margin: 50px;}
+
+#footer>div {
+    margin: 10px;
+    align-items: flex-start;
+}
+
 .footer-top {
+    /* margin: 0; */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    /* Horizontally */
+    align-items: center;
 }
+
 .footer-top-links {
+    margin: 0 50px;
     display: flex;
     flex-direction: column;
 }
+
 .footer-bottom {
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .footer-top-links a,
 .footer-bottom-links a {
     color: #ffffff;
     font-size: .75em;
+    margin: 2px 0;
 }
+
 .socials a {
     color: #dedede;
-    border: .5px solid;
+    border: none;
     border-radius: 100%;
     border-color: #ffffff;
     background-color: transparent;
     padding: 5px;
 }
+
 .socials a:hover {
     background-color: black;
     opacity: .5;
+}
+
+
+
+
+
+
+
+
+/* responsive web design */
+@media only screen and (max-width: 1800px) {
+
+    /* main section */
+    #main-section-text {
+            font-weight: 400;
+        width: 100%;
+    }
+
+    #about-section {}
+
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #cards-section {
+        width: 95%;
+        background-color: #ececec;
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 1515px) {
+    #main-section-text {
+        margin: 5% 0;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .navbar-links-mobile {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar-links-mobile {
+        background-color: #c287ce;
+        text-align: center;
+    }
+
+    .navbar-links-mobile>a {
+        margin: 20px 0;
+        padding: 30px;
+    }
+
+    #main-section {
+        background-image: url("/images/clippers.jpg");
+        height: 700px;
+    }
+
+    #main-section-text {
+        font-size: 1rem;
+    }
+}
+
+/* mobile view */
+@media only screen and (max-width: 800px) {
+    .dark {
+        background-color: #d69191;
+        margin-bottom: -20px;
+    }
+
+    .navbar-links {
+        visibility: hidden;
+    }
+
+    .navbar-links>div {
+        margin: 0 80%;
+    }
+
+    #navbar-menu-button {
+        visibility: visible;
+    }
+
+    .navbar-links-mobile {
+        visibility: hidden;
+    }
+
+    .navbar-links-mobile-active {
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .navbar-links>div {
+        margin: 0 65%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar-links>div {
+        margin: 0 40%;
+    }
+
+    .footer-top {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .navbar-links>div {
+        margin: 0 40%;
+    }
 }
